@@ -5,6 +5,7 @@ import com.ricedaddy.republica.armor.ModArmorMaterial;
 import com.ricedaddy.republica.blocks.BlockItemBase;
 import com.ricedaddy.republica.blocks.RubyBlock;
 import com.ricedaddy.republica.items.ItemBase;
+import com.ricedaddy.republica.items.PoisonApple;
 import com.ricedaddy.republica.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -29,6 +30,8 @@ public class RegistryHandler {
     //Items only (DeferredRegisters can only hold registryobjects)
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 
+    //Food
+    public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new));
     //Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
