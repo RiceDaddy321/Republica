@@ -31,7 +31,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 
     //Food
-    public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new));
+    public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new);
     //Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
