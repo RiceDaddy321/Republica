@@ -32,6 +32,14 @@ public class RegistryHandler {
     //Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<SwordItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () ->
+            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<SwordItem> RUBY_HOE = ITEMS.register("ruby_hoe", () ->
+            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<SwordItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () ->
+            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<SwordItem> RUBY_AXE = ITEMS.register("ruby_axe", () ->
+            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
 
     //Armor
     public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () ->

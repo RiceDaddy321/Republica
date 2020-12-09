@@ -2,5 +2,15 @@
   "item.repub.ruby": "Ruby",
   "block.repub.ruby_block": "Block of Ruby",
   "itemGroup.republicaTab": "Republica",
-  "item.repub.ruby_sword": "Ruby Sword"
+
+  "item.repub.ruby_sword": "Ruby Sword",
+  "item.repub.ruby_shovel": "Ruby Shovel",
+  "item.repub.ruby_pickaxe": "Ruby Pickaxe",
+  "item.repub.ruby_axe": "Ruby Axe",
+  "item.repub.ruby_hoe": "Ruby Hoe",
+
+  "item.repub.ruby_helmet": "Ruby Helmet",
+  "item.repub.ruby_chestplate": "Ruby Chestplate",
+  "item.repub.ruby_leggings": "Ruby Leggings",
+  "item.repub.ruby_boots": "Ruby Boots"
 }
