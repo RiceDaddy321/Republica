@@ -9,9 +9,7 @@ import com.ricedaddy.republica.items.PoisonApple;
 import com.ricedaddy.republica.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,8 +17,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Republica.MOD_ID);
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Republica.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Republica.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Republica.MOD_ID);
 
     public static void init()   {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -35,14 +33,14 @@ public class RegistryHandler {
     //Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
-    public static final RegistryObject<SwordItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () ->
-            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
-    public static final RegistryObject<SwordItem> RUBY_HOE = ITEMS.register("ruby_hoe", () ->
-            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
-    public static final RegistryObject<SwordItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () ->
-            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
-    public static final RegistryObject<SwordItem> RUBY_AXE = ITEMS.register("ruby_axe", () ->
-            new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () ->
+            new PickaxeItem(ModItemTier.RUBY, 0, -2.8f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () ->
+            new ShovelItem(ModItemTier.RUBY, 0.5f, -3.0f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<AxeItem> RUBY_AXE = ITEMS.register("ruby_axe", () ->
+            new AxeItem(ModItemTier.RUBY, 5, -3.1f, new Item.Properties().group( Republica.TAB)));
+    public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () ->
+            new HoeItem(ModItemTier.RUBY, -3, -1.0f, new Item.Properties().group( Republica.TAB)));
 
     //Armor
     public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () ->
