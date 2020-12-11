@@ -4,6 +4,7 @@ import com.ricedaddy.republica.Republica;
 import com.ricedaddy.republica.armor.ModArmorMaterial;
 import com.ricedaddy.republica.blocks.BlockItemBase;
 import com.ricedaddy.republica.blocks.RubyBlock;
+import com.ricedaddy.republica.blocks.RubyOre;
 import com.ricedaddy.republica.items.ItemBase;
 import com.ricedaddy.republica.items.PoisonApple;
 import com.ricedaddy.republica.tools.ModItemTier;
@@ -54,8 +55,10 @@ public class RegistryHandler {
 
     //Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+    public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
 
     //Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
 
 }
